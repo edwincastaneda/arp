@@ -2,7 +2,7 @@
 require('../../php/config.php');
 $criterio=$_POST['criterio'];
 
-$query ="SELECT id, nombre, modulos FROM Cursos WHERE 
+$query ="SELECT id, nombre, modulos, secciones FROM Cursos WHERE 
 id LIKE '".$criterio."' OR 
 nombre LIKE '".$criterio."%' OR 
 modulos LIKE '".$criterio."'";
@@ -14,7 +14,7 @@ if ($criterio==""){
 }else{
 
 	if($criterio=="todos"){
-	$query ="SELECT id, nombre, modulos, secciones FROM Cursos ORDER BY modificacion DESC";
+	$query ="SELECT id, nombre, modulos, secciones FROM cursos ORDER BY modificacion DESC";
 	}
 	$result = mysql_query($query)or die(mysql_error());
 	$num_row = mysql_num_rows($result);

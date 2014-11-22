@@ -2,7 +2,7 @@
 require('../../php/config.php');
 $criterio=$_POST['criterio'];
 
-$query ="SELECT id, nombre, modulos FROM Cursos WHERE 
+$query ="SELECT id, nombre, modulos, secciones FROM Cursos WHERE 
 id LIKE '".$criterio."' OR 
 nombre LIKE '".$criterio."%' OR 
 modulos LIKE '".$criterio."'";
