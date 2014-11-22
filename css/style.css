@@ -1,0 +1,184 @@
+/*
+Credit: http://www.templatemo.com
+*/
+
+body{ 
+	background-color: #0958aa !important;
+	/*background-image:  url(../images/back1.png);*/
+	background-repeat: repeat;
+}
+
+.container {
+  width: auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.wrap{
+padding-bottom:50px;
+}
+
+.section{
+	text-align: center;
+	padding-bottom:30px;
+	margin-top:50px;
+}
+
+.section .icono{
+	display: inline-block;
+	width: 140px;
+	height: 160px; 
+	margin: 0 20px 20px 0;
+	background: url(../images/menu_box.png) no-repeat
+}
+
+.section .icono a{
+	display: block; 
+	width: 140px; 
+	height: 30px; 
+	padding: 130px 10px 0px; 
+	background-repeat: no-repeat;
+	text-align: center; 
+	line-height: 30px; 
+	font-size: 14px; 
+	color: #fff; 
+	border-radius: 0px;
+}
+
+.section .icono a:hover { 
+	text-decoration: none;
+	background-color: #000 !important;	
+}
+
+.section a.home_boton { 
+	margin-left: 20px;
+}
+
+
+
+
+
+#menu {
+	text-align: center;
+	margin-top:50px;
+	padding-bottom:30px;
+}
+
+#menu .icono {
+	display: inline-block;
+	width: 140px;
+	height: 160px; 
+	margin: 0 20px 20px 0;
+	background: url(../images/menu_box.png) no-repeat
+}
+
+#menu .icono a { 
+	display: block; 
+	width: 140px; 
+	height: 30px; 
+	padding: 130px 10px 0px; 
+	background-repeat: no-repeat;
+	text-align: center; 
+	line-height: 30px; 
+	font-size: 14px; 
+	color: #fff; 
+	border-radius: 0px;
+}
+
+#menu .icono a:hover { 
+	text-decoration: none;
+	color:#fff;
+	background-color: #000 !important;	
+}
+
+#menu .icono a.personas { 
+	background-image: url(../images/icon_personas.png);
+	background-color: #FF0000;
+}
+
+#menu .icono a.cursos { 
+	background-image: url(../images/icon_cursos.png); 
+	background-color: #24A70D;
+}
+
+#menu .icono a.control { 
+	background-image: url(../images/icon_control.png); 
+	background-color: #0C3483;	
+}
+
+#menu .icono a.grupos { 
+	background-image: url(../images/icon_grupos.png); 
+	background-color: #8902E9;	
+}
+
+#menu .icono a.servidores { 
+	background-image: url(../images/icon_servidores.png);
+	background-color: #7A7A7A;	
+}
+
+
+.section .icono a.nuevo_curso { 
+	background-image: url(../images/icon_agregar_cursos.png);
+	background-color: #24A70D;	
+}
+
+.section .icono a.buscar_curso { 
+	background-image: url(../images/icon_buscar.png);
+	background-color: #24A70D;	
+}
+
+.section .icono a.asignacion_curso { 
+	background-image: url(../images/icon_asignar_curso.png);
+	background-color: #24A70D;	
+}
+
+.section .icono a.nueva_persona { 
+	background-image: url(../images/icon_nueva_persona.png);
+	background-color: #FF0000;	
+}
+
+.section .icono a.busqueda_persona { 
+	background-image: url(../images/icon_buscar.png);
+	background-color: #FF0000;	
+}
+
+.section .icono a.recursos_persona { 
+	background-image: url(../images/icon_recursos_persona.png);
+	background-color: #FF0000;	
+}
+
+
+#mrm_form { 
+	padding: 0; 
+	width: 365px; 
+}
+
+
+.boton, .boton_home{ 
+	cursor:pointer;
+	}
+
+.disable { 
+	opacity : .35;
+	background-color:lightgray; 
+	border:1px solid gray;
+}
+/*
+.asignacion_detalle, .recursos_detalle{
+	border: #fff solid 1px; 
+	padding:5px;
+	background: #fff;
+}*/
+
+/*Grafica 1*/
+#bar{width:6.25%;float:left; opacity:0.75;filter:alpha(opacity=75);
+border-top-right-radius:10px;
+border-top-left-radius:10px;}
+#grafica_dones_espirituales_dibujo{height:400px; background:url(../images/back-grafica-300.png) no-repeat;}
+#centro_dones_espirituales{ width:300px; margin: 0 auto 0 auto;}
+/*Grafica 2*/
+#bar_m{width:14.28%;float:left; opacity:0.75;filter:alpha(opacity=75);
+border-top-right-radius:10px;
+border-top-left-radius:10px;}
+#grafica_dones_motivacionales_dibujo{width:100%; height:400px; position:relative;background:url(../images/back-grafica1.png) no-repeat;}
+#centro_dones_motivacionales{ width:271px; margin: 0 auto 0 auto;}

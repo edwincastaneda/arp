@@ -1,0 +1,2 @@
+[17-Nov-2014 19:48:56 America/Chicago] PHP Parse error:  syntax error, unexpected 'nombre1' (T_STRING), expecting ',' or ';' in /home/shaddai/public_html/arp/control/php/cargarPersonaControl.php on line 47
+[17-Nov-2014 20:26:57 America/Chicago] PHP Parse error:  syntax error, unexpected '$mes' (T_VARIABLE), expecting ',' or ';' in /home/shaddai/public_html/arp/control/php/cargarPersonaControl.php on line 245

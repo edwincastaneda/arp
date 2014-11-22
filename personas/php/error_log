@@ -1,0 +1,6 @@
+[14-Nov-2014 10:49:43 America/Chicago] PHP Warning:  require(../config.php): failed to open stream: No such file or directory in /home/shaddai/public_html/arp/personas/php/buscarPersonaAgregarRecurso.php on line 2
+[14-Nov-2014 10:49:43 America/Chicago] PHP Warning:  require(../config.php): failed to open stream: No such file or directory in /home/shaddai/public_html/arp/personas/php/buscarPersonaAgregarRecurso.php on line 2
+[14-Nov-2014 10:49:43 America/Chicago] PHP Fatal error:  require(): Failed opening required '../config.php' (include_path='.:/opt/php54/lib/php') in /home/shaddai/public_html/arp/personas/php/buscarPersonaAgregarRecurso.php on line 2
+[14-Nov-2014 11:12:40 America/Chicago] PHP Warning:  require(config.php): failed to open stream: No such file or directory in /home/shaddai/public_html/arp/personas/php/agregrarRecurso.php on line 2
+[14-Nov-2014 11:12:40 America/Chicago] PHP Warning:  require(config.php): failed to open stream: No such file or directory in /home/shaddai/public_html/arp/personas/php/agregrarRecurso.php on line 2
+[14-Nov-2014 11:12:40 America/Chicago] PHP Fatal error:  require(): Failed opening required 'config.php' (include_path='.:/opt/php54/lib/php') in /home/shaddai/public_html/arp/personas/php/agregrarRecurso.php on line 2
