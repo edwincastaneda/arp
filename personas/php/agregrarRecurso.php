@@ -24,10 +24,10 @@ mysql_query("ROLLBACK");
 begin(); // transaction begins
 
 if ($existe=="si"){
-$query = "UPDATE Recursos SET url_dones_e='".$url_dones_esp."', url_dones_m='".$url_dones_mot."', modificacion=NOW() WHERE id_boleta='".$id_boleta."'";
+$query = "UPDATE recursos SET url_dones_e='".$url_dones_esp."', url_dones_m='".$url_dones_mot."', modificacion=NOW() WHERE id_boleta='".$id_boleta."'";
 }
 if ($existe=="no"){
-$query = "INSERT INTO Recursos VALUES ('".$id_boleta."','".$url_dones_esp."','".$url_dones_mot."', NOW())";
+$query = "INSERT INTO recursos VALUES ('".$id_boleta."','".$url_dones_esp."','".$url_dones_mot."', NOW())";
 }
 
 //echo $query;

@@ -1,20 +1,21 @@
 <?php 
- $liderazgo=$_GET['r1'];
- $administracion=$_GET['r2'];
- $ensenanza=$_GET['r3'];
- $conocimiento=$_GET['r4'];
- $sabiduria=$_GET['r5'];
- $profecia=$_GET['r6'];
- $discernimiento=$_GET['r7'];
- $exhortacion=$_GET['r8'];
- $pastoreo=$_GET['r9'];
- $fe=$_GET['r10'];
- $evangelismo=$_GET['r11'];
- $apostolado=$_GET['r12'];
- $servicioayuda=$_GET['r13'];
- $misericordia=$_GET['r14'];
- $dar=$_GET['r15'];
- $hospitalidad=$_GET['r16'];
+$liderazgo = isset($_GET['r1']) ? $_GET['r1'] : '';
+$administracion = isset($_GET['r2']) ? $_GET['r2'] : '';
+$ensenanza = isset($_GET['r3']) ? $_GET['r3'] : '';
+$conocimiento = isset($_GET['r4']) ? $_GET['r4'] : '';
+$sabiduria = isset($_GET['r5']) ? $_GET['r5'] : '';
+$profecia = isset($_GET['r6']) ? $_GET['r6'] : '';
+$discernimiento = isset($_GET['r7']) ? $_GET['r7'] : '';
+$exhortacion = isset($_GET['r8']) ? $_GET['r8'] : '';
+$pastoreo = isset($_GET['r9']) ? $_GET['r9'] : '';
+$fe = isset($_GET['r10']) ? $_GET['r10'] : '';
+$evangelismo = isset($_GET['r11']) ? $_GET['r11'] : '';
+$apostolado = isset($_GET['r12']) ? $_GET['r12'] : '';
+$servicioayuda = isset($_GET['r13']) ? $_GET['r13'] : '';
+$misericordia = isset($_GET['r14']) ? $_GET['r14'] : '';
+$dar = isset($_GET['r15']) ? $_GET['r15'] : '';
+$hospitalidad = isset($_GET['r16']) ? $_GET['r16'] : '';
+
  //$url="http://iglesiaelshaddai.org/encuesta/print.php";
 if($liderazgo!="" && $administracion!="" && $ensenanza!="" && $conocimiento!="" && $sabiduria!="" && $profecia!="" && $discernimiento!="" && $exhortacion!="" && $pastoreo!="" && $fe!="" && $evangelismo!="" && $apostolado!="" && $servicioayuda!="" && $misericordia!="" && $dar!="" && $hospitalidad!=""){
 ?>

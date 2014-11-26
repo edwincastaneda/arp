@@ -13,3 +13,4 @@
 <?php require('cursos/cursos.php'); ?>
 <?php require('control/control.php'); ?>
 <?php require('grupos/grupos.php'); ?>
+<?php require('servidores/servidores.php'); ?>

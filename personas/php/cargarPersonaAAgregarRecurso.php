@@ -16,8 +16,10 @@ if ($num_row >= 1) {
 
     <div class="panel panel-default asignacion_detalle">
         <div class="panel-heading text-left">
-            Recursos de Persona
-            <i style="cursor:pointer;float:right;font-size:18px;" id="remover_persona_recursos" class="fa fa-times"></i>
+            Recursos de Persona <div id="status_message_recursos"></div>
+            
+            <i style="cursor:pointer;float:right;font-size:18px;margin-right:5px;" id="remover_persona_recursos" class="fa fa-times"></i>
+            <span style="cursor:pointer;float:right;font-size:18px; display:none;" id="asignar_recurso" class="glyphicon glyphicon-floppy-disk"></span>
         </div>
         <div class="panel-body">
             <input name="id_boleta_asignacion" id="id_boleta_asignacion" type="hidden" value="<?php echo $row['id']; ?>" />
@@ -75,7 +77,7 @@ if ($num_row >= 1) {
                     </ul>
                 </div>
 
-
+                <input name="existe_recursos" id="existe_recursos" type="hidden" value="si" />
             <?php } else { ?>
                 <input name="existe_recursos" id="existe_recursos" type="hidden" value="no" />
                 <div class="col-md-6">
@@ -88,7 +90,7 @@ if ($num_row >= 1) {
                         <li class="list-group-item" ><i style="color:red;" class="fa fa-times-circle" id="test_dones_m_icon"></i> Test de Dones Motivacionales</li>
                     </ul>
                 </div>
-                <? }?>
+                <?php }?>
 
 
                 <?php if ($asignado == false) { ?>
@@ -96,7 +98,7 @@ if ($num_row >= 1) {
                         <ul class="list-group text-left">
                             <div class="input-group input-group-sm">
                                 <div class="input-group-addon"><i class="fa fa-link"></i></div>
-                                <input type="text" class="form-control" id="test_dones_espirituales" name="test_dones_espirituales" autocomplete="off" placeholder="Test de dones espirituales" value=<?php echo '"' . $row2['url_dones_e'] . '" class="' . substr($enabled_e, 0, -1) . ' required input_field" ' . $enabled_e; ?>>
+                                <input type="text" class="form-control" id="test_dones_espirituales" name="test_dones_espirituales" autocomplete="off" placeholder="Test de dones espirituales" value=<?php echo '"' . $row2['url_dones_e'] . '" class="' . substr($enabled_e, 0, -1) . '" ' . $enabled_e; ?>>
                                 <span class="input-group-addon">URL</span>
                             </div>
                         </ul>
@@ -121,7 +123,7 @@ if ($num_row >= 1) {
                         <ul class="list-group text-left">
                             <div class="input-group input-group-sm">
                                 <div class="input-group-addon"><i class="fa fa-link"></i></div>
-                                <input type="text" class="form-control" id="test_dones_motivacionales" name="test_dones_motivacionales" autocomplete="off" placeholder="Test de dones motivacionales" value=<?php echo '"' . $row2['url_dones_m'] . '" class="' . substr($enabled_m, 0, -1) . ' required input_field" ' . $enabled_m; ?>>
+                                <input type="text" class="form-control" id="test_dones_motivacionales" name="test_dones_motivacionales" autocomplete="off" placeholder="Test de dones motivacionales" value=<?php echo '"' . $row2['url_dones_m'] . '" class="' . substr($enabled_m, 0, -1) . '" ' . $enabled_m; ?>>
                                 <span class="input-group-addon">URL</span>
                             </div>
                         </ul>
@@ -143,6 +145,7 @@ if ($num_row >= 1) {
                             </div>
                         </div>
                     </div>
+                
                 </div>
 
             <?php } ?>
@@ -150,4 +153,4 @@ if ($num_row >= 1) {
         </div>	
     <?php
     }
-}?>
+?>

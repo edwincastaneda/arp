@@ -1,11 +1,12 @@
 <?php 
- $profecia=$_GET['r1'];
- $servicio=$_GET['r2'];
- $ensenanza=$_GET['r3'];
- $exhortacion=$_GET['r4'];
- $dar=$_GET['r5'];
- $administracion=$_GET['r6'];
- $misericordia=$_GET['r7'];
+ $profecia = isset($_GET['r1']) ? $_GET['r1'] : '';
+ $servicio = isset($_GET['r2']) ? $_GET['r2'] : '';
+ $ensenanza = isset($_GET['r3']) ? $_GET['r3'] : '';
+ $exhortacion = isset($_GET['r4']) ? $_GET['r4'] : '';
+ $dar = isset($_GET['r5']) ? $_GET['r5'] : '';
+ $administracion = isset($_GET['r6']) ? $_GET['r6'] : '';
+ $misericordia = isset($_GET['r7']) ? $_GET['r7'] : '';
+ 
  //$url="http://iglesiaelshaddai.org/encuesta/dones/print.php";
 if($profecia!="" && $servicio!="" && $ensenanza!="" && $exhortacion!="" && $dar!="" && $administracion!="" && $misericordia!="" ){
 ?>

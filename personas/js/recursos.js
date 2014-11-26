@@ -4,12 +4,12 @@ jQuery(function( $ ){
 
 
 function imprimirBotonRecursos(){
-		input_e=$('#test_dones_espirituales').val()
-		input_m=$('#test_dones_motivacionales').val()
+		var input_e=$('#test_dones_espirituales').val()
+		var input_m=$('#test_dones_motivacionales').val()
 		if((input_e !== ""  || input_m !== "") || (input_e !== ""  && input_m !== "")) {
-		$("#boton_asignar_recurso").show();
+                    $("#asignar_recurso").show();
 		}else{
-			$("#boton_asignar_recurso").hide('fast');
+                    $("#asignar_recurso").hide('fast');
 		}	
 	}
 	
@@ -144,9 +144,13 @@ function imprimirBotonRecursos(){
 		$('#status_asignacion_recursos').empty();
 	});
 	
+        $( "body" ).on( 'click', '#cambiar_grafica_mo', function () {
+		$('#grafica_test_dones_motivacionales').modal('hide');
+		$('#test_dones_motivacionales').val("");
+	});
 		
 //GRAFICAR
-			$( "body" ).on( 'keyup blur change input paste', '#test_dones_espirituales', function () {
+			$( "body" ).on( 'keyup input paste', '#test_dones_espirituales', function () {
 			var url_test = $("#test_dones_espirituales").val();
 			var flag = url_test.indexOf("?");
 			var parametros = url_test.substr(flag+1,url_test.length);
@@ -178,7 +182,7 @@ function imprimirBotonRecursos(){
 				}
 			});
 	});
-	$( "body" ).on( 'keyup blur change input paste', '#test_dones_motivacionales', function () {
+	$( "body" ).on( 'keyup input paste', '#test_dones_motivacionales', function () {
 			var url_test = $("#test_dones_motivacionales").val();
 			var flag = url_test.indexOf("?");
 			var parametros = url_test.substr(flag+1,url_test.length);
@@ -216,7 +220,7 @@ function imprimirBotonRecursos(){
 	//$('#asignar_recurso').live('click' , function(){
 	$( "body" ).on( 'click', '#asignar_recurso', function () {
 		id_boleta_val=$("#id_boleta_asignacion").val();
-        url_dones_esp_val=$('#test_dones_espirituales').val();
+                url_dones_esp_val=$('#test_dones_espirituales').val();
 		url_dones_mot_val=$('#test_dones_motivacionales').val();
 			
 		existe_val=$('#existe_recursos').val();
@@ -229,18 +233,16 @@ function imprimirBotonRecursos(){
             success: function(html){
 			  if(html=='true')
 				  {
-					$("#boton_asignar_recurso").hide('fast');
+					$("#asignar_recurso").hide('fast');
 					$("#remover_persona_recursos").hide('fast');
-					$('#test_dones_espirituales').prop("disabled", true);
-					$('#test_dones_motivacionales').prop("disabled", true); 
-					$("#status_asignacion_recursos").html("&iexcl;Asignaci&oacute;n realizada con &eacute;xito!");
+					$("#status_message_recursos").html("<h5><span class='label label-success'>&iexcl;Asignaci&oacute;n realizada con &eacute;xito!</span></h5>");
 				  }else{
-					 $("#status_asignacion_recursos").html("&iexcl;Asignaci&oacute;n NO realizada, intente de nuevo!");
+					 $("#status_message_recursos").html("<h5><span class='label label-danger'>&iexcl;Asignaci&oacute;n NO realizada, intente de nuevo!</span></h5>");
 				  }
 			  },
 				beforeSend:function()
 			  {
-                 $("#status_asignacion_recursos").html("Asignando...")
+                 $("#status_message_recursos").html("<h5><span class='label label-info'>Asignando...</span></h5>")
               }
 			  
         });
