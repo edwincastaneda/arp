@@ -17,8 +17,8 @@ if( $num_row >=1 ) { ?>
 <?php	while ($row = mysql_fetch_array($result)){	
  echo "<tr>"
     . "<td id='no_row'>{$row['id']}</td>"
-    . "<td class='text-center'><input name='cargo' id='cargo' type='text' class='form-control input-sm' value='".utf8_encode($row['descripcion'])."' readonly/>"
-            . "<input type='hidden' id='id_cargo' name='id_cargo' value='{$row['id']}' /></td>"
+    . "<td class='text-center'><input name='cargo' id='cargo' type='text' class='form-control input-sm' value='".utf8_decode($row['descripcion'])."' readonly/>"
+            . "<input type='hidden' id='id_cargo' name='id_cargo' value='".$row['id']."' /></td>"
     . "<td class='text-center'>"
             . "<span id='eliminar_cargo' style='color:red;cursor:pointer;' class='glyphicon glyphicon-ban-circle'></span>&nbsp;&nbsp;"
             . "<span id='editar_cargo' style='color:#FFD400;cursor:pointer;' class='glyphicon glyphicon-pencil'></span>&nbsp;&nbsp;"
